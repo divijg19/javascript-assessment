@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse String</title>
+</head>
+<body>
+  <h2>Reverse a String</h2>
+  <input type="text" id="inputString" placeholder="Enter a string">
+  <button onclick="reverseString()">Reverse</button>
+  <h3 id="output"></h3>
+
+  <script>
+    function reverseString() {
+      const str = document.getElementById("inputString").value;
+      const reversed = str.split('').reverse().join('');
+      document.getElementById("output").innerText = "Reversed: " + reversed;
+    }
+  </script>
+</body>
+</html>
